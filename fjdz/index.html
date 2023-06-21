@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>飞机大战</title>
+		<link rel="stylesheet" href="../fjdz/css/reset.css" />
+	</head>
+	<body>
+		<!--
+        	玩法：	1、支持上下左右键控制飞机移动，空格键暂停/继续
+        			2、支持飞机跟随鼠标移动
+        -->
+		<canvas id="canvas"></canvas>
+		<script type="text/javascript" src="../fjdz/system/Tools.js" ></script>
+		<script type="text/javascript" src="../fjdz/property/Frame.js" ></script>
+		<script type="text/javascript" src="../fjdz/js/BackGround.js" ></script>
+		<script type="text/javascript" src="../fjdz/js/Bomb.js" ></script>
+		<script type="text/javascript" src="../fjdz/js/MyPlane.js" ></script>
+		<script type="text/javascript" src="../fjdz/js/Bullet.js" ></script>
+		<script type="text/javascript" src="../fjdz/js/EnemyPlane.js" ></script>
+		<script type="text/javascript" src="../fjdz/js/GameStart.js" ></script>
+		<script>
+			window.onload = function(){
+				
+				document.body.addEventListener('touchmove',function(e){e.preventDefault()},false);
+				//开始游戏
+				new GameStart();
+			}
+		</script>
+	</body>
+</html>
